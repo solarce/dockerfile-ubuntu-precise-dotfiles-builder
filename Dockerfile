@@ -11,4 +11,3 @@ RUN apt-get --quiet --yes install curl
 RUN apt-get --quiet --yes install build-essential
 RUN gem install bundler > /dev/null 2>&1
 
-ENTRYPOINT ["/bin/true"]
