@@ -8,6 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -yqq
 RUN apt-get --quiet --yes install ruby1.9.1-full
 RUN apt-get --quiet --yes install curl
+RUN apt-get --quiet --yes install build-essential
 RUN gem install bundler > /dev/null 2>&1
 
 ENTRYPOINT ["/bin/true"]
